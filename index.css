@@ -1,0 +1,780 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: #000;
+    color: white;
+}
+header{
+    display: flex;
+    background: rgba(20, 27, 41, 0.749);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.logo{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    width: 70px;
+}
+.logo span{
+    font-size:50px;
+}
+.highlight{
+    color: orange;
+}
+nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.auth{
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth a {
+    color: white;
+    text-decoration: none;
+
+}
+.auth button{
+    background: rgb(255, 96,0);
+    border-radius: 5px;
+    width: 70px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     cursor: pointer;
+  transition: 0.3s;
+}
+.auth button:hover {
+  background: rgb(199, 192, 179);
+  color: black;
+}
+
+
+.signup {
+  background: orange;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center/cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 150px 60px;
+  max-width: 800px;
+}
+
+.content h1 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.content h1 span {
+  color: orange;
+}
+
+.content p {
+  margin: 20px 0;
+  color: #ccc;
+}
+
+.content p span {
+  color: orange;
+  margin: 0 10px;
+}
+
+/* BOOKING BOX */
+.booking-box {
+  display: flex;
+  gap: 15px;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  margin: 30px 0;
+}
+
+.booking-box input {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.booking-box button {
+  background: rgb(210, 139, 6);
+  border: none;
+  color: rgb(23, 22, 22);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.booking-box button:hover{
+background: rgb(254, 254, 253);
+  color: rgb(10, 9, 9);
+}
+
+
+/* OFFER BUTTON */
+.offer-btn {
+  background: transparent;
+  border: 2px solid orange;
+  color: orange;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.offer-btn:hover {
+  background: orange;
+  color: black;
+}
+.our span{
+  font-size: 4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.primimum{
+  color: rgb(255, 105,0);
+}
+.our p{
+  font-size:30px;
+  color: rgb(153 161,164);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.rating{
+    color: gold;
+    font-size: 14px;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: #000;
+}
+
+/* Card */
+.car-card{
+    width: 260px;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    transition: 0.3s;
+}
+
+.car-card:hover{
+    transform: translateY(-5px);
+}
+
+/* Image */
+.car-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Top section */
+.top{
+    padding: 15px;
+}
+
+.top h2{
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Rating */
+.rating{
+    background: #ff7a00;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    float: right;
+}
+
+/* Features */
+.features{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.feature{
+    text-align: center;
+}
+
+.feature i{
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feature p{
+    font-size: 12px;
+    color: #aaa;
+}
+.ourr{
+  height: 150px;
+  padding-top: 20,60;
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ourr span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight:bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.ourr p{
+   font-size:20px;
+  color: rgb(153 161,164);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.affordable {
+    background: #111;
+    color: #fff;
+    width: 260px;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+/* Icon circle */
+.affordable .able {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff3c00;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+     font-size: 2rem;
+  font-weight:bold;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.affordable h3 {
+     font-size: 2rem;
+  font-weight:bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+.affordable p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Hover effect */
+.affordable:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255, 60, 0, 0.4);
+    border-color: #ff3c00;
+}
+.maiin{
+ 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+
+}
+.ourrr span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight:bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+body {
+    background: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pricing-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 50px;
+}
+
+.card {
+     background:rgba(91, 90, 90, 0.133);
+     color: #dc7e7e;
+   padding: 30px 20px;
+    border-radius: 20px;
+     text-align: center; 
+    transition: 0.3s ease;
+     position: relative; 
+    
+}
+
+
+
+.card ul li {
+  list-style: none;
+    margin: 8px 0;
+    font-size: 15px;
+} 
+
+.card button {
+    background: #ff3c00;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #f79476;
+} 
+
+/* Hover effect */
+ .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(216, 132, 107, 0.4);
+} 
+
+/* Popular card highlight */
+ .popular {
+    border: 1px solid #ff3c00;
+    transform: scale(1.05);
+} 
+
+.tag {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: #ff3c00;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+} 
+.footer {
+    background: #0f0f0f;
+    color: #fff;
+    padding: 50px 20px 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-box h2,
+.footer-box h3 {
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin: 8px 0;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #ff3c00;
+    padding-left: 5px;
+}
+
+/* Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #888;
+}
+/* ================= GLOBAL FIX ================= */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= MOBILE (0–768px) ================= */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .auth {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    /* HERO */
+    .content {
+        padding: 120px 20px;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    /* BOOKING */
+    .booking-box {
+        flex-direction: column;
+    }
+
+    .booking-box input,
+    .booking-box button {
+        width: 100%;
+    }
+
+    /* CAR CARDS */
+    .main {
+        flex-direction: column;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    .car-card {
+        width: 100%;
+    }
+
+    /* WHY SECTION */
+    .maiin {
+        flex-direction: column;
+    }
+
+    .affordable {
+        width: 100%;
+    }
+
+    /* HEADINGS */
+    .our span,
+    .ourr span,
+    .ourrr span {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .our p,
+    .ourr p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* PRICING */
+    .pricing-section {
+        padding: 20px;
+    }
+}
+
+/* ================= TABLET (768–1024px) ================= */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 10px 30px;
+    }
+
+    .content h1 {
+        font-size: 45px;
+    }
+
+    .main {
+        flex-wrap: wrap;
+    }
+
+    .car-card {
+        width: 45%;
+    }
+
+    .maiin {
+        flex-wrap: wrap;
+    }
+
+    .affordable {
+        width: 45%;
+    }
+}
+
+/* ================= LARGE SCREEN (1024px+) ================= */
+@media (min-width: 1025px) {
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .car-card {
+        width: 260px;
+    }
+
+    .maiin {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .affordable {
+        width: 260px;
+    }
+}
+/* Hide menu icon on desktop */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Active menu */
+    .nav.active {
+        left: 0;
+    }
+
+    .auth {
+        display: none;
+    }
+}
+/* ================= CAR CARDS ================= */
+
+/* Desktop default */
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .car-card {
+        width: 45%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .car-card {
+        width: 100%;
+    }
+}
+
+/* ================= WHY CHOOSE CARDS ================= */
+
+.maiin {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .affordable {
+        width: 45%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .affordable {
+        width: 100%;
+    }
+}
+
+/* ================= PRICING CARDS ================= */
+
+.pricing-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .pricing-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .pricing-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= EXTRA IMPROVEMENTS ================= */
+
+/* Card content adjust */
+.car-card img {
+    height: auto;
+}
+
+/* Center align text on mobile */
+@media (max-width: 768px) {
+    .top h2 {
+        text-align: center;
+    }
+
+    .rating {
+        float: none;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+/* Default (Desktop) */
+.ourrr span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .ourrr span {
+        font-size: 2.3rem;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .ourrr span {
+        font-size: 1.6rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
