@@ -8,6 +8,9 @@ body{
     background: #000;
     color: white;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     display: flex;
     background: rgba(20, 27, 41, 0.749);
@@ -188,15 +191,18 @@ background: rgb(254, 254, 253);
     font-size: 14px;
 }
 .projects{
+
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 40px;
     background: #000;
 }
 
 /* Card */
 .car-card{
+    
     width: 260px;
+    height: 320px;
     background: #111;
     border-radius: 12px;
     overflow: hidden;
