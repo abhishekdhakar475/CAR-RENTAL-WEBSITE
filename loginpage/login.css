@@ -1,0 +1,229 @@
+/* body {
+    margin: 0;
+    font-family: Arial;
+    backdrop-filter: blur(5px);
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/040/084/456/small/ai-generated-a-dramatic-brandless-sleek-black-sports-car-surrounded-by-intense-orange-flames-and-blue-smoke-photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.contener{
+    background: linear-gradient(to right, #1d2842a0, #1e293b);
+    color: white;
+   border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+
+}
+.form-box {
+    padding: 40px;
+    text-align: center;
+}
+.h2{
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #1d2129;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #262b2e;
+}
+
+p {
+    margin-top: 15px;
+} */
+
+
+
+
+/* book now csss______ */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+/* Heading  */
+ .form-box h2{
+    background: linear-gradient(45deg, #ff6a0085, #fffb0083);
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    backdrop-filter: blur(4px);
+    background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center/cover;
+}
+
+/* Main Container */
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Form Box */
+.form-box{
+    background: rgba(0, 0, 0, 0.55); /* dark glass for better text */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px;
+    width: 380px;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Heading */
+.form-box h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Inputs + textarea + select */
+.form-box input,
+.form-box textarea,
+.form-box select{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Labels */
+.form-box label{
+    font-size: 13px;
+    color: #ddd;
+    margin-top: 8px;
+    display: block;
+}
+
+/* Button */
+.form-box button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff6b00, #ff4500);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+.form-box button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 69, 0, 0.6);
+}
+
+/* Focus effect */
+.form-box input:focus,
+.form-box textarea:focus{
+    outline: 2px solid #ff6b00;
+}
+
+/* Existing styles remain above */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Reduce form width for tablets and large phones */
+    .form-box {
+        width: 90%;
+        padding: 25px;
+    }
+    
+    .form-box h2 {
+        font-size: 22px;
+    }
+
+    .form-box input,
+    .form-box textarea,
+    .form-box select,
+    .form-box button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust for small mobile screens */
+    body {
+        padding: 10px;
+        background-size: cover;
+    }
+
+    .form-box {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .form-box h2 {
+        font-size: 20px;
+    }
+
+    .form-box input,
+    .form-box textarea,
+    .form-box select,
+    .form-box button {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .form-box label {
+        font-size: 12px;
+    }
+
+    .form-box button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

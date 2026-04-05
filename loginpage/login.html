@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-box">
+        <h2>Car Booking Form</h2>
+
+        <form id="bookingForm" onsubmit="sendWhatsApp(event)">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="tel" id="mobile" placeholder="Mobile Number" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="pickupLocation" placeholder="Pickup Location (City / Area)" required>
+            <textarea id="address" placeholder="Enter Your Full Address" rows="3" required></textarea>
+            <label style="font-size:14px;">Pickup Date & Time</label>
+            <input type="date" id="pickupDate" required>
+            <input type="time" id="pickupTime" required>
+            <label style="font-size:14px;">Return Date & Time</label>
+            <input type="date" id="returnDate" required>
+            <input type="time" id="returnTime" required>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+</div>
+
+<script>
+function sendWhatsApp(event) {
+    event.preventDefault();
+
+    var firstName = document.getElementById("firstName").value;
+    var lastName = document.getElementById("lastName").value;
+    var mobile = document.getElementById("mobile").value;
+    var email = document.getElementById("email").value;
+    var pickupLocation = document.getElementById("pickupLocation").value;
+    var address = document.getElementById("address").value;
+    var pickupDate = document.getElementById("pickupDate").value;
+    var pickupTime = document.getElementById("pickupTime").value;
+    var returnDate = document.getElementById("returnDate").value;
+    var returnTime = document.getElementById("returnTime").value;
+
+    var messageOwner = `New Booking Received 🚗%0A%0A`
+        + `Name: ${firstName} ${lastName}%0A`
+        + `Mobile: ${mobile}%0A`
+        + `Email: ${email}%0A`
+        + `Pickup Location: ${pickupLocation}%0A`
+        + `Address: ${address}%0A`
+        + `Pickup: ${pickupDate} at ${pickupTime}%0A`
+        + `Return: ${returnDate} at ${returnTime}`;
+
+    var messageUser = `Hello ${firstName}! ✅%0AYour booking is confirmed.%0A%0A`
+        + `Pickup: ${pickupDate} at ${pickupTime}%0A`
+        + `Return: ${returnDate} at ${returnTime}%0A`
+        + `Thank you for choosing DriveNow!`;
+
+    var ownerNumber = "9407234146"; // Owner ka number
+    var userNumber = mobile; // User ka number
+
+    // Open WhatsApp tabs
+    window.open(`https://wa.me/${ownerNumber}?text=${messageOwner}`, "_blank");
+    window.open(`https://wa.me/${userNumber}?text=${messageUser}`, "_blank");
+}
+</script>
+
+</body>
+</html>

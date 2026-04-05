@@ -42,40 +42,43 @@ nav a{
     color: white;
     font-size: 14px;
 }
-.auth{
-    
+/* Auth container (optional spacing) */
+.auth {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
-.auth a {
+/* Book Now Button */
+.auth button {
+    background: linear-gradient(45deg, #ff6b00, #ff4500);
     color: white;
-    text-decoration: none;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.4);
+}
 
-}
-.auth button{
-    background: rgb(255, 96,0);
-    border-radius: 5px;
-    width: 70px;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     cursor: pointer;
-  transition: 0.3s;
-}
+/* Hover effect */
 .auth button:hover {
-  background: rgb(199, 192, 179);
-  color: black;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(255, 69, 0, 0.6);
+}
+
+/* Click effect */
+.auth button:active {
+    transform: scale(0.95);
 }
 
 
-.signup {
-  background: orange;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-}
+
+
+
+
 
 /* HERO SECTION */
 .hero {
@@ -197,8 +200,15 @@ background: rgb(254, 254, 253);
     padding: 40px;
     background: #000;
 }
+.projects a{
+    text-align: center;
+    text-decoration: none;
+
+}
 
 /* Card */
+
+
 .car-card{
     
     width: 260px;

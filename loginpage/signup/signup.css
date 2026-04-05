@@ -1,0 +1,71 @@
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/040/084/456/small/ai-generated-a-dramatic-brandless-sleek-black-sports-car-surrounded-by-intense-orange-flames-and-blue-smoke-photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Glass Effect Box */
+/* .form-box{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+} */
+
+/* Heading */
+/* .form-box h2{
+    margin-bottom: 20px;
+} */
+
+/* Inputs */
+/* .form-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+} */
+
+/* Button */
+/* .form-box button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff6b00;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-box button:hover{
+    background: #ff4500;
+} */
+
+/* Text */
+/* .form-box p{
+    margin-top: 15px;
+    font-size: 14px;
+} */
+
+/* .form-box a{
+    color: #ffd700;
+    text-decoration: none;
+} */
